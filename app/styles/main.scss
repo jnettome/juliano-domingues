@@ -4,42 +4,12 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 @import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
 // endbower
 
-html {
-    overflow-y: scroll;
-}
-
-body {
-    font-family: sans-serif;
-    margin: 0; padding: 0;
-}
+.grid-sizer { width: 50%; }
 
 .item {
-    float: left;
     position: relative;
-    line-height: 1em;
-}
-
-
-.grid-sizer { width: 20%; }
-.item { width: 20%; }
-
-
-@media screen and (max-width: 1224px) {
-  /* 10 columns for larger screens */
-  .grid-sizer { width: 33.33%; }
-  .item { width: 33.33%; }
-}
-
-@media screen and (max-width: 720px) {
-  /* 10 columns for larger screens */
-  .grid-sizer { width: 50%; }
-  .item { width: 50%; }
-}
-
-@media screen and (max-width: 480px) {
-  /* 10 columns for larger screens */
-  .grid-sizer { width: 100%; }
-  .item { width: 100%; }
+    float: left;
+    width: 50%;
 }
 
 .image{
@@ -51,6 +21,7 @@ body {
 .image:after {
     clear:both;
 }
+
 
 .overlay {
     width: 100%;
