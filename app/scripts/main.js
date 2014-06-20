@@ -1,8 +1,8 @@
-$(window).load( function() {
+'use strict';
 
-    $('#container').masonry({
-        "itemSelector": ".item",
-        "columnWidth": ".grid-sizer",
+$(function() {
+    $('.background-image').each(function() {
+        $(this).css('background-image', 'url('+$(this).data('background')+')');
     });
 
 });
