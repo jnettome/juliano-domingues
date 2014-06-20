@@ -10,8 +10,14 @@ $body-bg: #EFEEE5;
 @import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
 // endbower
 
+html {
+    overflow-x: hidden;
+}
+
 .main-header {
     margin-bottom: 80px;
+    margin-top: 80px;
+    padding-left: 0;
 
     .logo {
         color: #333;
@@ -40,5 +46,17 @@ $body-bg: #EFEEE5;
         a {
             text-indent: -5000px;
         }
+    }
+}
+
+.footer {
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    padding-left: 0;
+
+    h3 {
+        font-family: 'Montserrat';
+        text-transform: uppercase;
     }
 }
