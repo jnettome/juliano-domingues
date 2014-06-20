@@ -17,4 +17,6 @@ $(function() {
 $(window).on('resize load', function() {
     $('.resizr').css('width', $('.background-image').outerWidth());
     $('.resizr').css('height', $('.background-image').outerHeight());
+
+    $('.resizr-full').css('width', $(window).innerWidth()).css('height', $(window).innerHeight());
 });
