@@ -1,5 +1,6 @@
 'use strict';
 
+// Hover effect on portfolio gallery
 $(function() {
     $('.background-image').each(function() {
         $(this).css('background-image', 'url('+$(this).data('background')+')');
@@ -14,9 +15,11 @@ $(function() {
     });
 });
 
-$(window).on('resize load', function() {
-    $('.resizr').css('width', $('.background-image').outerWidth());
-    $('.resizr').css('height', $('.background-image').outerHeight());
+// $(window).on('resize load', function() {
+//     var baseElement = $('.background-image:eq(0)');
 
-    $('.resizr-full').css('width', $(window).innerWidth()).css('height', $(window).innerHeight());
-});
+//     $('.resizr').width(baseElement.innerWidth());
+//     $('.resizr').height(baseElement.innerHeight());
+
+//     // $('.resizr-full').css('width', $(window).innerWidth()).css('height', $(window).innerHeight());
+// });
