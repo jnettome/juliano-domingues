@@ -1,32 +1,23 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 @import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
-//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base:        $font-family-sans-serif !default;
-$heading-font-family:    "Montserrat";
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-base: $font-family-sans-serif;
+$heading-font-family: "Montserrat";
 $font-links: $heading-font-family;
-
 $font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-base: $font-family-sans-serif;
 
 $brand-primary: rgba(154, 175, 173, 1);
 $link-color: $brand-primary;
-// link font montserra
 
-$nav-link-padding:                          10px 15px !default;
-$nav-link-hover-bg:                         transparent;
-
-$nav-open-link-hover-color:                 #000;
-
-//== Pills
-$nav-pills-border-radius:                   0;
-$nav-pills-active-link-hover-bg:            transparent;
-$nav-pills-active-link-hover-color:         #333;
+$nav-link-padding: 10px 15px;
+$nav-link-hover-bg: transparent;
+$nav-pills-active-link-hover-bg: transparent;
+$nav-pills-active-link-hover-color: #333;
 
 $body-bg: rgba(239,238,229, 1);
+$grid-gutter-width: 0;
 
 // bower:scss
 @import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
@@ -75,18 +66,9 @@ a {
         }
     }
 }
-
-html {
-    overflow-x: hidden;
+body {
+    padding-bottom: 200px;
 }
-
-.back-btn {
-    // text-transform: uppercase;
-    a {
-        color: #333;
-    }
-}
-
 
 .entry-work {
     .background-image {
