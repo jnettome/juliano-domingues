@@ -15,20 +15,49 @@
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
+
+        <script type="text/javascript">
+            (function() {
+                var path = '//easy.myfonts.net/v2/js?sid=187190(font-family=Brandon+Grotesque+Bold)&sid=187189(font-family=Brandon+Grotesque+Light)&key=EEtkJDZTmu',
+                    protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+                    trial = document.createElement('script');
+                trial.type = 'text/javascript';
+                trial.async = true;
+                trial.src = protocol + path;
+                var head = document.getElementsByTagName("head")[0];
+                head.appendChild(trial);
+            })();
+        </script>
     </head>
     <body>
-        <div id="container-fluid">
-            <div class="row">
-                <header class="col-md-6 main-header col-md-offset-6">
-                    <a href="#" class="logo"><h2>Juliano Domingues</h2></a>
-                    <p class="lead">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.
+        <div class="container-fluid">
+            <header class="row main-header">
+                <nav class="site-navigation">
+                    <ul class="nav nav-pills">
+                        <li class="active"><a href="#">about</a></li>
+                        <li><a href="#">projects</a></li>
+                        <li><a href="#">blog&oslash;</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="headline">
+                    <!-- <img src="" alt=""> -->
+                    <h2>Hello, little world.</h2>
+
+                    <p class="headline-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, <em>sed</em> do eiusmod <br>
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
                     </p>
-                </header>
-            </div>
+                </div>
+
+                <p class="text-center scroll-holder">
+                    <a href="#" class="scroll-down icon">scroll down</a>
+                </p>
+            </header>
+        </div>
+
+        <div id="container-fluid">
 
             <div class="row entry-work">
                 <div class="col-md-6 background-image" data-background="/images/julianodomingues04havaianas_01.jpg" data-background-hover="/images/julianodomingues04havaianas_02.jpg">
@@ -57,17 +86,6 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-6 col-md-offset-6 footer">
-                    <h3>Get in Touch</h3>
-
-                    <address class="lead">
-                        795 Folsom Ave, Suite 600<br>
-                        San Francisco, CA 94107<br>
-                        <abbr title="Phone">P:</abbr> (123) 456-7890
-                    </address>
-                </div>
-            </div>
 
         </div>
 
