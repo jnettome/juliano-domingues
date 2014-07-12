@@ -15,6 +15,14 @@ $(function() {
     });
 });
 
+$(document).ready(function() {
+    var finishEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+    $('.headline').addClass('animated fadeInDown').one(finishEvents, function() {
+        $('.site-navigation').addClass('animated fadeIn');
+        $('.scroll-holder').addClass('animated fadeIn');
+    });
+});
+
 // $(window).on('resize load', function() {
 //     var baseElement = $('.background-image:eq(0)');
 
