@@ -15,6 +15,7 @@ $(function() {
     });
 });
 
+// Animation
 $(document).ready(function() {
     var finishEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
     $('.headline').addClass('animated fadeInDown').one(finishEvents, function() {
@@ -22,12 +23,3 @@ $(document).ready(function() {
         $('.scroll-holder').addClass('animated fadeIn');
     });
 });
-
-// $(window).on('resize load', function() {
-//     var baseElement = $('.background-image:eq(0)');
-
-//     $('.resizr').width(baseElement.innerWidth());
-//     $('.resizr').height(baseElement.innerHeight());
-
-//     // $('.resizr-full').css('width', $(window).innerWidth()).css('height', $(window).innerHeight());
-// });
