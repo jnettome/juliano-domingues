@@ -141,6 +141,12 @@ body {
 
 body.work {
     .entry-work {
-        margin: 80px auto;
+        // margin: 80px auto;
+    }
+    .img-responsive {
+        width: 100%;
+    }
+    .main-header {
+        margin-bottom: 0px;
     }
 }

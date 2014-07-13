@@ -15,73 +15,38 @@
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
+
+        <script type="text/javascript">
+            (function() {
+                var path = '//easy.myfonts.net/v2/js?sid=187190(font-family=Brandon+Grotesque+Bold)&sid=187189(font-family=Brandon+Grotesque+Light)&key=EEtkJDZTmu',
+                    protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+                    trial = document.createElement('script');
+                trial.type = 'text/javascript';
+                trial.async = true;
+                trial.src = protocol + path;
+                var head = document.getElementsByTagName("head")[0];
+                head.appendChild(trial);
+            })();
+        </script>
     </head>
     <body class="work">
+        <div class="container-fluid">
+            <header class="row main-header">
+                <nav class="site-navigation">
+                    <ul class="nav nav-pills">
+                        <li class="active"><a href="#">about</a></li>
+                        <li><a href="#">projects</a></li>
+                        <li><a href="#">blog&oslash;</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
         <div id="container-fluid">
-            <div class="row">
-                <header class="col-md-6 main-header col-md-offset-6">
-                    <h5 class="back-btn"><a href="/index.html">Back to projects</a></h5>
-                    <a href="#" class="logo"><h2>Havaianas</h2></a>
-                    <p class="lead">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.
-                    </p>
-                </header>
-            </div>
-
-            <div class="row">
-                <div class="col-md-12 resizr-full">
-                    <img src="/images/julianodomingues04havaianas_01.jpg" class="img-responsive">
-                </div>
-
-                <div class="col-md-12 resizr-full">
-                    <img src="/images/julianodomingues04havaianas_02.jpg" class="img-responsive">
-                </div>
-
-                <div class="col-md-12 resizr-full">
-                    <img src="/images/julianodomingues04havaianas_03.jpg" class="img-responsive">
-                </div>
-            </div>
-
-            <!-- Call to another projects -->
             <div class="row entry-work">
-                <div class="col-md-6 background-image" data-background="/images/julianodomingues01nuvens_01.jpg" data-background-hover="/images/julianodomingues01nuvens_01a.jpg">
-                    <a href="/work.html" class="resizr">
-                        <h3 class="title">Job title</h3>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </a>
-                </div>
-                <div class="col-md-6 background-image" data-background="/images/julianodomingues06zuzukapoderosa_01.jpg" data-background-hover="/images/julianodomingues07zuzukapoderosa_01.jpg">
-                    <a href="/work.html" class="resizr">
-                        <h3 class="title">Job title</h3>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </a>
-                </div>
-                <div class="col-md-6 background-image" data-background="/images/julianodomingues03klub_03.jpg" data-background-hover="/images/julianodomingues03klub_04.jpg">
-                    <a href="/work.html" class="resizr">
-                        <h3 class="title">Job title</h3>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </a>
-                </div>
-                <div class="col-md-6 background-image" data-background="/images/julianodomingues0855_01.jpg" data-background-hover="/images/julianodomingues0855_02.jpg">
-                    <a href="/work.html" class="resizr">
-                        <h3 class="title">Job title</h3>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6 col-md-offset-6 footer">
-                    <h3>Get in Touch</h3>
-
-                    <address class="lead">
-                        795 Folsom Ave, Suite 600<br>
-                        San Francisco, CA 94107<br>
-                        <abbr title="Phone">P:</abbr> (123) 456-7890
-                    </address>
+                <div class="col-md-12">
+                    <img src="/images/julianodomingues_TT14_a.jpg" class="img-responsive">
                 </div>
             </div>
 
@@ -91,6 +56,9 @@
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/jquery.easing/js/jquery.easing.js"></script>
+        <script src="../bower_components/jquery.imgpreload/jquery.imgpreload.js"></script>
+        <script src="../bower_components/retina.js/build/js/retina-1.2.0.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
