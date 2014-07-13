@@ -19,6 +19,6 @@ $(function() {
         var target = $('#container-fluid');
         $('html,body').animate({
             scrollTop: target.offset().top
-        }, 1000);
+        }, 1000, 'easeInOutExpo');
     });
 });
