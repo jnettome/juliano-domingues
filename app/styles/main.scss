@@ -34,8 +34,20 @@ a {
         padding-bottom: 200px;
         ul.nav {
             @include center-block();
-            width: 380px;
+
+            @media (min-width: $screen-sm-min) {
+                width: 380px;
+            }
+
+            width: 100%;
             font-size: 18px;
+
+            li {
+                display: block;
+                a {
+                    display: block;
+                }
+            }
 
             > li.active > a { color: $brand-primary; }
 
@@ -83,7 +95,14 @@ a {
             font-size: 38px;
         }
         .headline-text {
-            width: 600px;
+            @media (min-width: $screen-sm-min) {
+                width: 600px;
+                padding: 0;
+            }
+
+            width: 100%;
+            padding: 40px;
+
             margin-top: 30px;
             @include center-block();
 

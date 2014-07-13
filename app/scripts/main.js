@@ -22,3 +22,11 @@ $(function() {
         }, 2000, 'easeInOutExpo');
     });
 });
+
+$(window).on('resize load', function() {
+    if($(this).innerWidth() < 768) {
+        $('.site-navigation ul').addClass('nav-stacked nav-justified');
+    } else {
+        $('.site-navigation ul').removeClass('nav-stacked nav-justified');
+    }
+});
