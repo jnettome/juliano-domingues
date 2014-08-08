@@ -30,6 +30,33 @@ a {
 .main-header {
     margin: 80px auto;
 
+    hr {
+        border-color: #c8c5b6;
+        border-width: 2px;
+    }
+
+    &.stacked {
+        margin: 0px auto;
+
+        .stacked-navigation {
+            .logo {
+                float: left;
+                img {
+                    width: 35%;
+                }
+            }
+
+            ul.nav {
+                a {
+                    padding: auto 10px;
+                    display: block;
+                    margin: auto 15px;
+                }
+            }
+        }
+    }
+
+
     .site-navigation {
         padding-bottom: 200px;
         ul.nav {
