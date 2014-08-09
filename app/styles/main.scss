@@ -33,24 +33,49 @@ a {
     hr {
         border-color: #c8c5b6;
         border-width: 2px;
+        // @include clearfix();
+        clear: both;
     }
 
     &.stacked {
         margin: 0px auto;
 
         .stacked-navigation {
+
             .logo {
                 float: left;
                 img {
                     width: 35%;
+                    margin-bottom: 10px;
                 }
             }
 
             ul.nav {
+                float: left;
                 a {
                     padding: auto 10px;
                     display: block;
                     margin: auto 15px;
+                }
+                > li.active > a { color: $brand-primary; }
+            }
+        }
+
+        nav.social {
+            text-align: right;
+            ul.nav {
+                float: right;
+
+                @media (min-width: $screen-sm-min) {
+                    width: 170px;
+                }
+
+                li {
+                    a {
+                        padding: auto 5px;
+                        display: block;
+                        margin: auto 10px;
+                    }
                 }
             }
         }
@@ -168,11 +193,50 @@ body {
 
 body.work {
     .entry-work {
-        // margin: 80px auto;
+        margin: 80px auto;
+
+        .work-meta {
+            min-height: 140px;
+            padding-bottom: 80px;
+
+            .work-title {
+                h2 {
+                    font-family: $heading-font-family;
+                    font-size: 26px;
+                    color: darken(rgba(198, 196, 178, 1), 5%);
+                }
+            }
+
+            .work-info {
+                padding-top: 20px;
+                p {
+                    font-family: 'Brandon Grotesque Light';
+                    font-size: 22px;
+                    color: darken(rgba(198, 196, 178, 1), 15%);
+                }
+            }
+        }
+
+        .work-showcase {
+            .navigation {
+
+                &.left {}
+                &.right { text-align: right; }
+
+                a {
+                    display: block;
+                    color: rgba(198, 196, 178, 1);
+                    padding-top: 250px;
+                    font-size: 38px;
+
+                    &:hover {
+                        color: darken(rgba(198, 196, 178, 1), 15%);
+                    }
+                }
+            }
+        }
     }
-    .img-responsive {
-        width: 100%;
-    }
+
     .main-header {
         margin-bottom: 0px;
     }
