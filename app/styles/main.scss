@@ -302,6 +302,78 @@ body.work {
         border-color: rgba(239,238,229, 0);
     }
     nav.social {
-        margin-right: 11px;
+        margin-right: 13.5px;
+    }
+}
+
+body.about {
+    .entry-about {
+        padding-top: 80px;
+        margin: 80px auto;
+
+        .page-title {
+            font-family: $heading-font-family;
+            font-size: 52px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: rgba(198, 196, 178, 1);
+            margin-left: 130px;
+        }
+
+        .page-content {
+            padding-top: 20px;
+            p {
+                font-family: 'Brandon Grotesque Light';
+                font-size: 22px;
+                color: darken(rgba(198, 196, 178, 1), 15%);
+
+                &.lead {
+                    font-size: 32px;
+                    letter-spacing: 3px;
+                    line-height: 125%;
+
+                    a {
+                        // border-bottom: 2px solid $brand-primary;
+                        font-size: 36px;
+                        font-weight: bold;
+                        letter-spacing: -2px;
+                        text-decoration: underline;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+            .btn-download {
+                margin-top: 40px;
+                background-color: rgba(198, 196, 178, 1);
+                border-color: rgba(198, 196, 178, 1);
+
+                font-family: 'Brandon Grotesque Bold';
+                font-size: 18px;
+                font-weight: 300;
+                color: $body-bg;
+                text-transform: uppercase;
+
+                border-radius: 0;
+                -webkit-border-radius: 0;
+
+                padding: 15px 15px 10px;
+
+                &:hover {
+                    border-color: rgba(198, 196, 178, 1);
+                }
+            }
+
+            .img-signature {
+                float: left;
+                margin-top: -80px;
+            }
+
+            .grid {
+                margin-top: 60px;
+            }
+        }
     }
 }
