@@ -237,7 +237,7 @@ body.work {
                 &.right {
                     position: absolute;
                     text-align: right;
-                    right: -32px;
+                    right: -16px;
 
                     a {
                         &:before,
@@ -253,6 +253,11 @@ body.work {
                     padding-top: 250px;
                     font-size: 38px;
                     position: relative;
+
+                    img {
+                        position: fixed;
+                        top: 50%;
+                    }
 
                     &:before,
                     &:after {
@@ -292,8 +297,11 @@ body.work {
 
 .affix.main-header {
     z-index: 15;
-    width: 92.5%;
+    width: 93.5%;
     hr {
         border-color: rgba(239,238,229, 0);
+    }
+    nav.social {
+        margin-right: 11px;
     }
 }
