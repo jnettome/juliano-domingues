@@ -8,7 +8,8 @@ $font-links: $heading-font-family;
 $font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-base: $font-family-sans-serif;
 
-$brand-primary: rgba(154, 175, 173, 1);
+// $brand-primary: rgba(154, 175, 173, 1);
+$brand-primary: rgba(180, 210, 198, 1);
 $link-color: $brand-primary;
 
 $nav-link-padding: 10px 0;
@@ -218,21 +219,62 @@ body.work {
         }
 
         .work-showcase {
+            position: relative;
             .navigation {
+                z-index: 4;
 
-                &.left {}
-                &.right { text-align: right; }
+                &.left {
+                    position: absolute;
+                    left: -32px;
+                }
+
+                &.right {
+                    position: absolute;
+                    text-align: right;
+                    right: -32px;
+
+                    a {
+                        &:before,
+                        &:after {
+                            left: 80px;
+                        }
+                    }
+                }
 
                 a {
                     display: block;
                     color: rgba(198, 196, 178, 1);
                     padding-top: 250px;
                     font-size: 38px;
+                    position: relative;
 
-                    &:hover {
-                        color: darken(rgba(198, 196, 178, 1), 15%);
+                    &:before,
+                    &:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        height: 2px;
+                        @include transition(width 0.3s);
+                    }
+
+                    &:before {
+                        width: 17%;
+                        background: transparent;
+                    }
+
+                    &:after {
+                        width: 0;
+                        background: $brand-primary;
+                    }
+
+                    &:active:after,
+                    &:hover:after {
+                        width: 17%;
                     }
                 }
+
             }
         }
     }
