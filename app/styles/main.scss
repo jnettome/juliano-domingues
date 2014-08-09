@@ -30,11 +30,13 @@ a {
 
 .main-header {
     margin: 80px auto;
+    background-color: rgba(239,238,229, .98);
 
     hr {
         border-color: #c8c5b6;
         border-width: 2px;
-        // @include clearfix();
+        padding-bottom: 0;
+        margin-bottom: 0;
         clear: both;
     }
 
@@ -47,12 +49,13 @@ a {
                 float: left;
                 img {
                     width: 35%;
-                    margin-bottom: 10px;
+                    margin: -10px 0 10px 10px;
                 }
             }
 
             ul.nav {
                 float: left;
+                margin-top: -5px;
                 a {
                     padding: auto 10px;
                     display: block;
@@ -66,6 +69,7 @@ a {
             text-align: right;
             ul.nav {
                 float: right;
+                margin-top: -5px;
 
                 @media (min-width: $screen-sm-min) {
                     width: 170px;
@@ -193,7 +197,9 @@ body {
 }
 
 body.work {
+
     .entry-work {
+        padding-top: 80px;
         margin: 80px auto;
 
         .work-meta {
@@ -281,5 +287,13 @@ body.work {
 
     .main-header {
         margin-bottom: 0px;
+    }
+}
+
+.affix.main-header {
+    z-index: 15;
+    width: 92.5%;
+    hr {
+        border-color: rgba(239,238,229, 0);
     }
 }
