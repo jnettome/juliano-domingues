@@ -30,7 +30,7 @@ a {
 
 .main-header {
     margin: 80px auto;
-    background-color: rgba(239,238,229, .98);
+    // background-color: rgba(239,238,229, .98);
 
     hr {
         border-color: #c8c5b6;
@@ -60,22 +60,56 @@ a {
                     padding: auto 10px;
                     display: block;
                     margin: auto 15px;
+                    position: relative;
+
+                    &:before,
+                    &:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 2px;
+                        @include transition(width 0.3s);
+                    }
+
+                    &:before {
+                        width: 100%;
+                        background: transparent;
+                    }
+
+                    &:after {
+                        width: 0;
+                        background: $link-color;
+                    }
+
+                    &:active:after,
+                    &:hover:after {
+                        width: 100%;
+                    }
+
+                    &:hover {
+                        color: $link-color;
+                    }
                 }
+
+
                 > li.active > a { color: $brand-primary; }
             }
         }
 
         nav.social {
-            text-align: right;
+            padding-top: 20px;
             ul.nav {
-                float: right;
+                // float: right;
                 margin-top: -5px;
 
                 @media (min-width: $screen-sm-min) {
-                    width: 170px;
+                    // width: 240px;
                 }
 
                 li {
+                    float: right;
                     a {
                         padding: auto 5px;
                         display: block;
@@ -133,12 +167,16 @@ a {
 
                 &:after {
                     width: 0;
-                    background: $brand-primary;
+                    background: $link-color;
                 }
 
                 &:active:after,
                 &:hover:after {
                     width: 100%;
+                }
+
+                &:hover {
+                    color: $link-color;
                 }
             }
         }
@@ -176,10 +214,6 @@ a {
         }
     }
 }
-body {
-    padding-bottom: 200px;
-}
-
 .entry-work {
     .background-image {
         min-height: 350px;
@@ -297,12 +331,12 @@ body.work {
 
 .affix.main-header {
     z-index: 15;
-    width: 93.5%;
+    width: 1140px;
     hr {
         border-color: rgba(239,238,229, 0);
     }
     nav.social {
-        margin-right: 13.5px;
+        // margin-right: 13.5px;
     }
 }
 
@@ -351,18 +385,19 @@ body.about {
                 border-color: rgba(198, 196, 178, 1);
 
                 font-family: 'Brandon Grotesque Bold';
-                font-size: 18px;
-                font-weight: 300;
+                font-size: 14px;
                 color: $body-bg;
                 text-transform: uppercase;
+                letter-spacing: 3px;
 
                 border-radius: 0;
                 -webkit-border-radius: 0;
 
-                padding: 15px 15px 10px;
+                padding: 15px 25px 10px;
 
                 &:hover {
                     border-color: rgba(198, 196, 178, 1);
+                    background-color: darken(rgba(198, 196, 178, 1), 5%);
                 }
             }
 
@@ -375,5 +410,22 @@ body.about {
                 margin-top: 60px;
             }
         }
+    }
+}
+
+footer.footer {
+    clear: both;
+    padding-top: 300px;
+    margin-bottom: 100px;
+
+    font-family: $heading-font-family;
+    color: darken(rgba(198, 196, 178, 1), 5%);
+
+    hr {
+        border-color: #c8c5b6;
+        border-width: 2px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        clear: both;
     }
 }
